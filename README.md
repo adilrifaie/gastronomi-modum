@@ -15,38 +15,64 @@ week2/
 
 ## 📱 App 1 — GastrostomiApp
 
-> Gastrostomi bakımını kolaylaştırmak için tasarlanmış bilgi ve eğitim uygulaması.
+> **Gastrostomi Bakım Rehberi** — Gastrostomi hastalarına ve bakım verenlerine yönelik bilgi, eğitim ve quiz uygulaması.
 
-📂 [app1/README.md](./app1/README.md) dosyasına bakınız.
+### 📖 Proje Açıklaması
+
+GastrostomiApp, gastrostomi tüpü kullanan hastalar ve onlara bakan kişiler için geliştirilmiş bir mobil rehber uygulamasıdır. Uygulama; eğitim makaleleri, kısa bilgiler, interaktif bulmacalar ve video içerikleri sunarak kullanıcıların bilgi düzeyini artırmayı hedefler.
+
+### ✨ Özellikler
+
+- 📚 **Eğitim Makaleleri** — Gastrostomi bakımına dair kapsamlı makaleler
+- 🧩 **Bulmaca / Quiz** — Bilgi pekiştirme amaçlı interaktif bulmaca
+- 📋 **Kısa Bilgiler** — Kategorilere göre filtrelenebilir hızlı bilgi kartları
+- 👤 **Profil** — Kullanıcı profil ekranı
+- 🔗 **Makale Detayı** — Her makale için ayrıntılı içerik görüntüleme
+
+### ⚙️ Kurulum & Çalıştırma
+
+**Gereksinimler:**
+- Node.js (v18+)
+- npm veya yarn
+- Expo Go (fiziksel cihaz için) veya Android Emulator
+
+```bash
+# Bağımlılıkları yükle
+cd app1
+npm install
+
+# Geliştirme sunucusunu başlat
+npx expo start
+
+# Sadece Android için
+npx expo start --android
+```
+
+Expo Go uygulamasını telefonunuza indirin ve QR kodu tarayarak uygulamayı açın.
+
+### 📱 APK İndir
+
+Build alınmış APK dosyasını doğrudan aşağıdaki bağlantıdan indirebilirsiniz:
+
+👉 [GastrostomiApp APK İndir](https://expo.dev/artifacts/eas/oKLoomfzpdrPeSmJvxeFce.apk)
 
 ---
 
 ## 🛠 Kullanılan Teknolojiler
 
-| Teknoloji | Sürüm |
-|-----------|-------|
-| React Native | 0.81.5 |
-| Expo | ~54.0.33 |
-| TypeScript | ~5.9.2 |
-| Expo Router | ~6.0.23 |
-| React | 19.1.0 |
+| Paket | Sürüm | Amaç |
+|-------|-------|------|
+| React Native | 0.81.5 | Temel çerçeve |
+| Expo | ~54.0.33 | Platform araçları |
+| TypeScript | ~5.9.2 | Tip güvenli geliştirme |
+| Expo Router | ~6.0.23 | Dosya tabanlı navigasyon |
+| expo-linear-gradient | ~15.0.8 | Gradyan arka planlar |
+| @expo/vector-icons | ^15.0.3 | İkon seti |
+| react-native-safe-area-context | ~5.6.0 | Güvenli alan yönetimi |
+| react-native-screens | ~4.16.0 | Native navigasyon ekranları |
 
 ---
 
-## ⚙️ Genel Kurulum
+## 👤 Geliştirici
 
-Her iki uygulama da bağımsız birer Expo projesidir. Ayrı ayrı kurulup çalıştırılmaları gerekir.
-
-```bash
-# App 1
-cd app1
-npm install
-npx expo start
-
-# App 2
-cd app2
-npm install
-npx expo start
-```
-
-Uygulamayı fiziksel cihazda test etmek için **Expo Go** uygulamasını indirin ve terminalde gösterilen QR kodunu tarayın.
+YZM304 — Mobil Uygulama Geliştirme Dersi
